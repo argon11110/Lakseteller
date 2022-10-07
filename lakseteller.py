@@ -6,9 +6,11 @@ while trying:
             print("Laks må være et heltall større enn 0\n")
         elif laks == 1:
             print(f"{laks} laks")
-            trying = False
+            if input("Kjør igjen? [j/n]") == "n":
+                trying = False
         else:
-            print(f"{laks} laks")
-            trying = False
+            print(f"{laks} lakser")
+            if input("Kjør igjen? [j/n]") == "n":
+                trying = False
     except:
         print("Laks må være et heltall større enn 0\n")
